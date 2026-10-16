@@ -1,0 +1,13 @@
+{
+  "id": 17,
+  "slug": "item-17",
+  "name": "OpenDRG 分组器展示平台",
+  "category": "质控工具（开源，第三方）",
+  "summary": "网页版分组器，自述支持按结算清单质控规则对诊断、手术操作做质控提醒，并统计时间、费用消耗指数等",
+  "url": "https://opendrg.github.io",
+  "region_or_version": "自述支持多地分组方案",
+  "reason": "免安装可试用；需注明非官方",
+  "verified_date": "2026-10-16",
+  "official": false,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

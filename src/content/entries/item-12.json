@@ -1,0 +1,13 @@
+{
+  "id": 12,
+  "slug": "item-12",
+  "name": "国家医疗保障疾病诊断相关分组（CHS-DRG）分组与付费技术规范（医疗司补）",
+  "category": "分组工具（官方技术规范）",
+  "summary": "DRG 分组原理、权重和费率测算、费用极高 / 极低病例处理等技术规范（PDF，已打开首页核对标题）",
+  "url": "https://www.gov.cn/zhengce/zhengceku/2019-11/18/5562261/files/d1e38788efee4493b732fdcb0776a2b7.pdf",
+  "region_or_version": "全国；2019 年版",
+  "reason": "写分组器、算权重的方法论原文",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

@@ -1,0 +1,13 @@
+{
+  "id": 4,
+  "slug": "item-04",
+  "name": "《关于印发按病组（DRG）和病种分值（DIP）付费 2.0 版分组方案并深入推进相关工作的通知》政策解读",
+  "category": "政策解读",
+  "summary": "中国政府网发布的 2.0 版分组方案政策解读",
+  "url": "https://www.gov.cn/zhengce/202407/content_6964138.htm",
+  "region_or_version": "全国；2.0 版（2024）",
+  "reason": "3.0 的前一版，做版本对比用；国家医保局原页本次打不开，用政府网解读页",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

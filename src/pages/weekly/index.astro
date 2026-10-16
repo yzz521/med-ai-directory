@@ -1,0 +1,42 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+
+const reports = (await getCollection('weekly')).sort((a, b) => (a.data.week < b.data.week ? 1 : -1));
+const rendered = await Promise.all(
+  reports.map(async (report) => {
+    const { Content } = await report.render();
+    return { report, Content };
+  }),
+);
+
+const description = '首期周报提纲，列出政策变化、新收录工具、实操坑和下期预告。本页是骨架，尚未写成报道。';
+---
+
+<BaseLayout title="周报提纲 · 医疗 AI 与 DRG/DIP 工具目录" description={description}>
+  <header class="page-intro">
+    <p class="kicker">周报</p>
+    <h1>周报</h1>
+    <p>本页按提纲列出栏目，还没有填入当期事实。文中的 # 编号与目录条目编号一致。数字和政策在写成报道前，需要按原始链接再核对。</p>
+    <p class="lede-note">本站不提供诊断或治疗建议。信息可能已经过时。</p>
+  </header>
+
+  {
+    rendered.length === 0 && <p class="empty">还没有周报提纲。</p>
+  }
+
+  {
+    rendered.map(({ report, Content }) => (
+      <article>
+        <div class="banner">
+          <span class="badge is-third">{report.data.status}</span>
+          <span class="week">{report.data.week}</span>
+        </div>
+        <h2>{report.data.title}</h2>
+        <div class="outline">
+          <Content />
+        </div>
+      </article>
+    ))
+  }
+</BaseLayout>

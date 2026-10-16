@@ -1,0 +1,13 @@
+{
+  "id": 13,
+  "slug": "item-13",
+  "name": "WHO ICD-10 浏览器（2019 版）",
+  "category": "编码工具（国际）",
+  "summary": "世界卫生组织 ICD-10 2019 版在线浏览",
+  "url": "https://icd.who.int/browse10/2019/en",
+  "region_or_version": "国际；2019 版",
+  "reason": "医保版 ICD-10 的国际母版，对照查类目用",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

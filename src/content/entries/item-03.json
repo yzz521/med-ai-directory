@@ -1,0 +1,13 @@
+{
+  "id": 3,
+  "slug": "item-03",
+  "name": "国家医保局关于印发《医疗保障按病种付费管理暂行办法》的通知",
+  "category": "政策文件",
+  "summary": "按病种付费（DRG / DIP）的管理办法（医保发〔2025〕18号），载于国务院公报 2025 年第 29 号；**特例单议见第 20–24 条，不单列全国文件**",
+  "url": "https://www.gov.cn/gongbao/2025/issue_12346/202510/content_7044726.html",
+  "region_or_version": "全国",
+  "reason": "按病种付费的制度框架，和分组方案互补",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

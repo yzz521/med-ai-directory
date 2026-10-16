@@ -1,0 +1,13 @@
+{
+  "id": 20,
+  "slug": "item-20",
+  "name": "Trizen-Coding（医保编码辅助模型）",
+  "category": "AI 工具（商业，第三方）",
+  "summary": "自述依据病历临床事实提供编码候选与依据，辅助医保和病案团队做编码核查；最终编码以专业人员审核为准",
+  "url": "https://trizen.ai/site/model-trizen-coding.html?lang=zh",
+  "region_or_version": "未写明",
+  "reason": "医保编码 AI 辅助的代表；**建议标「商业产品」**，不写效果",
+  "verified_date": "2026-10-16",
+  "official": false,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

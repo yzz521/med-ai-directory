@@ -1,0 +1,22 @@
+---
+import { getCollection } from 'astro:content';
+import DirectoryBrowser from '../components/DirectoryBrowser.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { byId } from '../lib/entries';
+
+const entries = byId(await getCollection('entries'));
+const description =
+  '收录医疗人工智能，以及 DRG/DIP 医院支付改革相关的公开政策、官方数据和第三方工具。本站不提供诊断或治疗建议，信息可能已经过时。';
+---
+
+<BaseLayout title="医疗 AI 与 DRG/DIP 工具目录" description={description}>
+  <header class="page-intro">
+    <p class="kicker">公开信息目录</p>
+    <h1>医疗 AI 与 DRG/DIP 工具目录</h1>
+    <p>
+      这里收录医疗人工智能，以及中国医院按病组（DRG）、按病种分值（DIP）付费相关的公开政策、官方数据和第三方工具。页面只展示条目文件里已有的字段。
+    </p>
+    <p class="lede-note">本站不提供诊断或治疗建议。信息可能已经过时。</p>
+  </header>
+  <DirectoryBrowser entries={entries} />
+</BaseLayout>

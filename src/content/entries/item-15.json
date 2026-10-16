@@ -1,0 +1,13 @@
+{
+  "id": 15,
+  "slug": "item-15",
+  "name": "《医疗保障基金智能监管规则库、知识库（2025 年版）》",
+  "category": "质控控费（官方规则库）",
+  "summary": "国家医保局出版的智能监管\"两库\"，收录规则 88 类、知识点 24.7 万条，已对应医保编码",
+  "url": "https://www.nhsa.gov.cn/art/2026/2/12/art_14_19660.html",
+  "region_or_version": "全国；2025 年版",
+  "reason": "医院做事前提醒 / 自查的官方规则来源",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

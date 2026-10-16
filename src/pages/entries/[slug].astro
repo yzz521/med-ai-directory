@@ -1,0 +1,86 @@
+---
+import { getCollection } from 'astro:content';
+import InlineText from '../../components/InlineText.astro';
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { entryTags, isHttpUrl } from '../../lib/entries';
+import { metaDescription, plainText } from '../../lib/text';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('entries');
+  return entries.map((entry) => ({
+    params: { slug: entry.data.slug },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+const data = entry.data;
+const tags = entryTags(data);
+const linked = isHttpUrl(data.url);
+const description = metaDescription(plainText(data.summary));
+---
+
+<BaseLayout title={`${data.name} · 目录`} description={description}>
+  <article class="detail">
+    <p class="crumbs">
+      <a href="/">目录</a>
+      <span aria-hidden="true"> / </span>
+      <a href={`/?category=${encodeURIComponent(data.category)}`}>{data.category}</a>
+    </p>
+    <div class="meta-row">
+      <span class="num">#{data.id}</span>
+      <span class:list={['badge', data.official ? 'is-official' : 'is-third']}>
+        {data.official ? '官方' : '第三方'}
+      </span>
+      {tags.filter((tag) => tag !== '官方' && tag !== '第三方').map((tag) => <span class="badge is-extra">{tag}</span>)}
+    </div>
+    <h1>{data.name}</h1>
+    {
+      data.verified_date && (
+        <p class="verified">
+          <span>最后核实日期</span>
+          {data.verified_date}
+        </p>
+      )
+    }
+    <p class="lead">
+      <InlineText text={data.summary} />
+    </p>
+
+    <dl class="facts">
+      <dt>类别</dt>
+      <dd>{data.category}</dd>
+      <dt>地区或版本</dt>
+      <dd>{data.region_or_version}</dd>
+      <dt>收录理由</dt>
+      <dd>
+        <InlineText text={data.reason} />
+      </dd>
+      <dt>链接</dt>
+      <dd>
+        {
+          linked ? (
+            <a class="url" href={data.url} target="_blank" rel="noopener noreferrer">
+              {data.url}
+            </a>
+          ) : (
+            <span class="url">{data.url}</span>
+          )
+        }
+      </dd>
+    </dl>
+
+    {
+      linked && (
+        <p>
+          <a class="out-link" href={data.url} target="_blank" rel="noopener noreferrer">打开原始链接</a>
+        </p>
+      )
+    }
+
+    <aside class="entry-note">
+      <p>{data.disclaimer}</p>
+      <p>本站不提供诊断或治疗建议。信息可能已经过时。</p>
+    </aside>
+  </article>
+</BaseLayout>
