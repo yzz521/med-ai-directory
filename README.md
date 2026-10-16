@@ -6,7 +6,7 @@
 
 ## 本地开发
 
-需要 Node.js 18.20.8 或更新版本。Cloudflare Pages 上建议把环境变量 `NODE_VERSION` 设为 `20`。
+需要 Node.js 18.20.8 或更新版本。构建环境建议把环境变量 `NODE_VERSION` 设为 `20`。
 
 ```bash
 npm install
@@ -56,11 +56,11 @@ npm run preview
 
 ## 部署
 
-托管目标是 Cloudflare Pages。仓库所有者稍后在 Cloudflare 里连接 GitHub。本仓库不包含部署脚本或托管账号。
+当前线上地址是 Cloudflare Workers：https://med-ai-directory.15302757442a.workers.dev 。本仓库不包含部署脚本或托管账号。
 
 - 生产分支：`main`
 - 构建命令：`npm run build`
 - 输出目录：`dist`
 - 环境变量（可选）：`NODE_VERSION=20`
 
-`astro.config.mjs` 里的 `site` 目前是占位地址 `https://med-ai-directory.pages.dev`。买到正式域名后改成真实域名，再重新构建，sitemap 和规范链接才会换成新域名。
+`astro.config.mjs` 里的 `site` 目前是占位地址 `https://med-ai-directory.15302757442a.workers.dev`。买到正式域名后改成真实域名，再重新构建，sitemap 和规范链接才会换成新域名。
