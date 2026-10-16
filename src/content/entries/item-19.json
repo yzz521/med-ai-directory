@@ -1,0 +1,13 @@
+{
+  "id": 19,
+  "slug": "item-19",
+  "name": "CHS-DRG MCP Server",
+  "category": "AI 工具（开源，第三方）",
+  "summary": "自述把 CHS-DRG 2.0 / 3.0 病案分组能力以 MCP 工具形式提供给 AI 智能体，支持分组、版本对照、编码检索；声明不存储病案、不返回支付信息",
+  "url": "https://glama.ai/mcp/servers/fattank/chs-drg-mcp",
+  "region_or_version": "自述 CHS-DRG 2.0 / 3.0",
+  "reason": "大模型调 DRG 分组的典型做法；作者自声明\"仅供核对，不构成结算意见\"",
+  "verified_date": "2026-10-16",
+  "official": false,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

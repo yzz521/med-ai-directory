@@ -1,0 +1,11 @@
+---
+import { inlineHtml } from '../lib/text';
+
+interface Props {
+  text: string;
+}
+
+const { text } = Astro.props;
+---
+
+<span set:html={inlineHtml(text)} />

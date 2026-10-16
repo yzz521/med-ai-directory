@@ -1,0 +1,13 @@
+{
+  "id": 14,
+  "slug": "item-14",
+  "name": "OpenDRG（开源 CHS-DRG 分组器）",
+  "category": "分组工具（开源，第三方）",
+  "summary": "自述为国家医保局 CHS-DRG 的开源实现，提供 Java、C#、Python、JavaScript 分组器源码，已支持 CHS-DRG 3.0",
+  "url": "https://github.com/OpenDRG/OpenDRG",
+  "region_or_version": "自述支持 CHS-DRG 3.0 / 2.0 及多地细分组（医疗司提示：Java 子仓库最后提交在 2023-09，3.0 支持以项目自述为准）",
+  "reason": "开发者可直接集成；需注明非官方，结果以医保经办认定为准",
+  "verified_date": "2026-10-16",
+  "official": false,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

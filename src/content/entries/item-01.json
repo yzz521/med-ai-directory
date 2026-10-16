@@ -1,0 +1,13 @@
+{
+  "id": 1,
+  "slug": "item-01",
+  "name": "国家医疗保障局关于印发按病组和病种分值付费 3.0 版分组方案并做好落地实施相关工作的通知",
+  "category": "政策文件",
+  "summary": "国家医保局印发 DRG / DIP 3.0 版分组方案，并部署落地实施",
+  "url": "https://www.nhsa.gov.cn/art/2026/9/2/art_104_21975.html",
+  "region_or_version": "全国；3.0 版（2026-09-02）",
+  "reason": "目录站核心：现行最新分组方案",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

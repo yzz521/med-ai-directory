@@ -1,0 +1,31 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+const description = '本站不提供诊断或治疗建议。目录信息可能已经过时，使用前请核对原始出处。';
+---
+
+<BaseLayout title="关于与免责声明 · 医疗 AI 与 DRG/DIP 工具目录" description={description}>
+  <article class="detail">
+    <p class="kicker">关于</p>
+    <h1>关于本站</h1>
+    <p>
+      本站是医疗人工智能工具，以及中国医院支付方式改革（DRG / DIP）相关公开资料与工具的静态目录。详情页只展示条目数据里已有的名称、类别、简介、链接、地区或版本、收录理由和声明。
+    </p>
+
+    <section class="callout" aria-labelledby="disclaimer-heading">
+      <h2 id="disclaimer-heading">免责声明</h2>
+      <p><strong>本站不提供诊断或治疗建议。</strong>这里的内容不能代替医师、医疗机构或医保经办机构的判断，也不能当作诊疗、编码或结算意见。</p>
+      <p><strong>信息可能已经过时。</strong>政策、分组方案和工具页面都会变化。使用前请打开原始链接，自行核对当前版本。</p>
+    </section>
+
+    <h2>最后核实日期</h2>
+    <p>
+      如果条目数据里有核实日期，列表和详情会写明「最后核实日期」。这个日期只表示该日核对过当时能看到的公开信息，不表示此后内容仍然有效。没有该字段的条目不显示这一行。
+    </p>
+
+    <h2>官方与第三方</h2>
+    <p>
+      条目标为「官方」或「第三方」，对应数据里的 official 字段。第三方工具的介绍来自条目原文，本站不另写效果。收录不表示认可，也不表示可以当作医保结算依据。每条详情会另附该条目自己的声明。
+    </p>
+  </article>
+</BaseLayout>

@@ -1,0 +1,32 @@
+---
+const path = Astro.url.pathname;
+
+const links = [
+  { href: '/', label: '目录' },
+  { href: '/weekly/', label: '周报' },
+  { href: '/about/', label: '关于' },
+];
+
+function isCurrent(href: string): boolean {
+  if (href === '/') return path === '/';
+  return path === href || path.startsWith(href);
+}
+---
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/">
+      <span class="mark" aria-hidden="true"></span>
+      医疗 AI · DRG/DIP 目录
+    </a>
+    <nav class="nav" aria-label="站点">
+      {
+        links.map((link) => (
+          <a href={link.href} aria-current={isCurrent(link.href) ? 'page' : undefined}>
+            {link.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

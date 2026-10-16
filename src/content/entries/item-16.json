@@ -1,0 +1,13 @@
+{
+  "id": 16,
+  "slug": "item-16",
+  "name": "智能监管\"两库\"规则和知识点分批公开（最新：第二十一批）",
+  "category": "质控控费（官方数据）",
+  "summary": "按批公开知识点明细（PDF + Excel），第二十一批为\"诊断与患者性别不符\"规则",
+  "url": "https://www.nhsa.gov.cn/art/2026/9/8/art_109_22052.html",
+  "region_or_version": "全国；持续更新",
+  "reason": "可机读的规则明细，适合做系统内置提醒；目录站可跟踪每批更新",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

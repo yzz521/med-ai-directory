@@ -1,0 +1,13 @@
+{
+  "id": 8,
+  "slug": "item-08",
+  "name": "国家医疗保障局办公室关于修订《医疗保障基金结算清单》《医疗保障基金结算清单填写规范》的通知",
+  "category": "政策文件",
+  "summary": "修订医保基金结算清单及其填写规范",
+  "url": "https://www.nhsa.gov.cn/art/2021/8/30/art_104_6540.html",
+  "region_or_version": "全国；2021 修订",
+  "reason": "结算清单是 DRG / DIP 入组的数据源头，开发和病案都要用",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}

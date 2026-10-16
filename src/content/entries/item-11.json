@@ -1,0 +1,13 @@
+{
+  "id": 11,
+  "slug": "item-11",
+  "name": "国家医保信息业务编码标准数据库动态维护平台",
+  "category": "编码工具（官方）",
+  "summary": "国家医保局的医保信息业务编码标准数据库，可查询医保编码",
+  "url": "https://code.nhsa.gov.cn",
+  "region_or_version": "全国",
+  "reason": "医保版诊断、手术操作等编码的官方查询入口",
+  "verified_date": "2026-10-16",
+  "official": true,
+  "disclaimer": "仅作公开信息目录，不构成诊疗或结算意见。"
+}
